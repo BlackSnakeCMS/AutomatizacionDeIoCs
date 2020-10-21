@@ -1,0 +1,416 @@
+{
+    "malware": {},
+    "page_type": "PEXE",
+    "analysis": {
+        "info": {
+            "results": {
+                "sha1": "917e60cdb3cd6fac7f476787428cac5045367ce4",
+                "file_class": "PEXE",
+                "file_type": "PE32 executable (GUI) Intel 80386, for MS Windows",
+                "filesize": "201126",
+                "ssdeep": "3072:su2q9BIau/qCVjvoXCwWg2n/pujQiJweZ7SZ1LOlODa4+J3881TZVn3lpgR:OqbQVT5wWgsGJw2WlOeaA81Lnu",
+                "sha256": "b28531feb7299e60eabd01b20c1f1e9f79b9f72cbb58bf3df1ccd14e08dbf953",
+                "md5": "16cda323189d8eba4248c0a2f5ad0d8f"
+            }
+        },
+        "hash": "b28531feb7299e60eabd01b20c1f1e9f79b9f72cbb58bf3df1ccd14e08dbf953",
+        "plugins": {
+            "pe32info": {
+                "process_time": "1.5183398723602295",
+                "results": {
+                    "pdbinfo": [
+                        "debug.pdb"
+                    ],
+                    "exports": [],
+                    "richhash": "",
+                    "imports": [
+                        {
+                            "address": "0x40d000",
+                            "name": "TransparentBlt",
+                            "dll": "msimg32.DLL"
+                        },
+                        {
+                            "address": "0x40d004",
+                            "name": "DllInitialize",
+                            "dll": "msimg32.DLL"
+                        },
+                        {
+                            "address": "0x40d008",
+                            "name": "vSetDdrawflag",
+                            "dll": "msimg32.DLL"
+                        },
+                        {
+                            "address": "0x40d00c",
+                            "name": "AlphaBlend",
+                            "dll": "msimg32.DLL"
+                        },
+                        {
+                            "address": "0x40d010",
+                            "name": "GradientFill",
+                            "dll": "msimg32.DLL"
+                        },
+                        {
+                            "address": "0x40d018",
+                            "name": "GetComputerNameW",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d01c",
+                            "name": "GetConsoleAliasW",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d020",
+                            "name": "FormatMessageW",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d024",
+                            "name": "GetProcAddress",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d028",
+                            "name": "InterlockedExchange",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d02c",
+                            "name": "GetLocalTime",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d030",
+                            "name": "GetModuleHandleA",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d034",
+                            "name": "CreateEventW",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d038",
+                            "name": "lstrcmpiA",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d03c",
+                            "name": "CloseHandle",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d040",
+                            "name": "lstrcmpA",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d044",
+                            "name": "GetLogicalDrives",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d048",
+                            "name": "GetStdHandle",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d04c",
+                            "name": "FindResourceA",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d050",
+                            "name": "FileTimeToSystemTime",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d054",
+                            "name": "VirtualQuery",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d058",
+                            "name": "GetSystemInfo",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d05c",
+                            "name": "InterlockedDecrement",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d060",
+                            "name": "GetTickCount",
+                            "dll": "kernel32.DLL"
+                        },
+                        {
+                            "address": "0x40d068",
+                            "name": "CM_Add_Range",
+                            "dll": "cfgmgr32.DLL"
+                        },
+                        {
+                            "address": "0x40d06c",
+                            "name": "CMP_Report_LogOn",
+                            "dll": "cfgmgr32.DLL"
+                        },
+                        {
+                            "address": "0x40d070",
+                            "name": "CM_Add_Empty_Log_Conf",
+                            "dll": "cfgmgr32.DLL"
+                        },
+                        {
+                            "address": "0x40d078",
+                            "name": "PathCombineA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d07c",
+                            "name": "UrlHashA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d080",
+                            "name": "UrlUnescapeA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d084",
+                            "name": "UrlIsOpaqueW",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d088",
+                            "name": "UrlGetPartA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d08c",
+                            "name": "PathCommonPrefixA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d090",
+                            "name": "UrlIsA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d094",
+                            "name": "PathCompactPathA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d098",
+                            "name": "UrlCanonicalizeA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d09c",
+                            "name": "UrlEscapeA",
+                            "dll": "shlwapi.DLL"
+                        },
+                        {
+                            "address": "0x40d0a4",
+                            "name": "SetCursorPos",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0a8",
+                            "name": "CharToOemA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0ac",
+                            "name": "wsprintfA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0b0",
+                            "name": "DrawIcon",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0b4",
+                            "name": "IsDialogMessageA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0b8",
+                            "name": "LoadCursorA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0bc",
+                            "name": "SetFocus",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0c0",
+                            "name": "IsWindow",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0c4",
+                            "name": "GetWindowLongA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0c8",
+                            "name": "GetWindowTextA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0cc",
+                            "name": "DispatchMessageA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0d0",
+                            "name": "GetCaretPos",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0d4",
+                            "name": "IsZoomed",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0d8",
+                            "name": "PeekMessageA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0dc",
+                            "name": "IsCharLowerW",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0e0",
+                            "name": "DialogBoxParamA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0e4",
+                            "name": "LoadImageA",
+                            "dll": "user32.DLL"
+                        },
+                        {
+                            "address": "0x40d0ec",
+                            "name": "InetDialHandler",
+                            "dll": "cmdial32.DLL"
+                        },
+                        {
+                            "address": "0x40d0f0",
+                            "name": "CmCustomDialDlg",
+                            "dll": "cmdial32.DLL"
+                        }
+                    ],
+                    "signed": "0",
+                    "resource_strings": [],
+                    "version_information": [],
+                    "pehash": "9468378d2259d3f9733db8ddd474a7b926405d60",
+                    "certs": [],
+                    "imphash": "72561468b98e8377206b2bf6322f03ea",
+                    "sections": [
+                        {
+                            "SizeOfRawData": "48128",
+                            "entropy": "6.50",
+                            "Name": ".text",
+                            "Misc_VirtualSize": "47872",
+                            "VirtualAddress": "4096"
+                        },
+                        {
+                            "SizeOfRawData": "3072",
+                            "entropy": "3.44",
+                            "Name": ".data",
+                            "Misc_VirtualSize": "6969",
+                            "VirtualAddress": "53248"
+                        },
+                        {
+                            "SizeOfRawData": "129536",
+                            "entropy": "7.99",
+                            "Name": ".rsrc",
+                            "Misc_VirtualSize": "129426",
+                            "VirtualAddress": "61440"
+                        },
+                        {
+                            "SizeOfRawData": "7680",
+                            "entropy": "6.71",
+                            "Name": ".reloc",
+                            "Misc_VirtualSize": "7256",
+                            "VirtualAddress": "192512"
+                        }
+                    ],
+                    "packers": null
+                }
+            },
+            "adobemalwareclassifier": {
+                "process_time": "0.20325493812561035",
+                "results": {}
+            },
+            "exiftool": {
+                "process_time": "0.18148088455200195",
+                "results": {
+                    "Subsystem": "Windows GUI",
+                    "Subsystem_Version": "4.0",
+                    "Linker_Version": "5.12",
+                    "Image_Version": "0.0",
+                    "File_Inode_Change_Date/Time": "2017:07:19 04:07:04+00:00",
+                    "OS_Version": "4.0",
+                    "Entry_Point": "0x7564",
+                    "Machine_Type": "Intel 386 or later, and compatibles",
+                    "Time_Stamp": "2014:05:15 07:36:45+00:00",
+                    "Initialized_Data_Size": "140288",
+                    "Uninitialized_Data_Size": "0",
+                    "Code_Size": "48128",
+                    "MIME_Type": "application/octet-stream",
+                    "PE_Type": "PE32"
+                }
+            },
+            "avast": {
+                "process_time": "0.023762941360473633",
+                "results": {
+                    "detection": "Win32:Kryptik-PLL",
+                    "alerts": [
+                        "Malware infection"
+                    ]
+                }
+            },
+            "clamav": {
+                "process_time": "0.039112091064453125",
+                "results": {}
+            },
+            "ratdecoder": {
+                "process_time": "0.017874956130981445",
+                "results": {}
+            },
+            "yarad": {
+                "process_time": "0.037355899810791016",
+                "results": {
+                    "detection": []
+                }
+            },
+            "peanomal": {
+                "process_time": "0.4647500514984131",
+                "results": {
+                    "detection": [
+                        {
+                            "name": "entropy_based",
+                            "value": "1"
+                        },
+                        {
+                            "name": "checksum_header_zero",
+                            "value": "1"
+                        }
+                    ],
+                    "anomalies": "2"
+                }
+            }
+        },
+        "datetime_int": "2017-07-19T04:07:04",
+        "_id": "596eda1a27f65105ea0bb095",
+        "metadata": {
+            "tlp": "WHITE"
+        }
+    }
+}
