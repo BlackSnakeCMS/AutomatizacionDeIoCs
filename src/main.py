@@ -1,6 +1,7 @@
 import re
 from data_process import DataProcess
 import json
+import iocextract as ioc
 
 ips = 0
 hashes = 0
@@ -17,7 +18,6 @@ output = {
         "urls": {
             "cantidad": 0,
             "buenas": 0,
-            "fake": 0
         },
         "ips": {
             "cantidad": 0,
@@ -37,48 +37,45 @@ output = {
 
 f = open('data.csv', 'r', encoding='utf-8')
 
-def analize(arg):
+def analize():
     global ips
     global hashes
     global urls
     global output
-    ip = re.match(ip_pattern, arg)
-    url = re.match(url_pattern, arg)
+    global content
     resumen = output['resumen']
-    if ip:
+    ips = ioc.extract_ips(content, refang=True)
+    urls = ioc.extract_urls(content, refang=True)
+    hashes = ioc.extract_hashes(content)
+    for ip in ips:
         resumen['ips']['cantidad'] += 1
-        data = process.analyzeip(ip.group())
+        data = process.analyzeip(ip)
         if data.score >= 0:
             resumen['ips']['buenas'] += 1
         output['detalle']['ips'].append(
             data.toDict()
         )
-    elif url:
+    for url in urls:
         resumen['urls']['cantidad'] += 1
-        data = process.analyzeurl(url.group())
-        if data != None and data.score >= 0:
-            resumen['urls']['buenas'] += 1
-        if data == None:
-            resumen['urls']['fake'] += 1
-        else:
+        data = process.analyzeurl(url)
+        if data != None: 
+            if data.score >= 0:
+                resumen['urls']['buenas'] += 1    
             output['detalle']['urls'].append(
                 data.toDict()
             )
-    else:
+    for hash in hashes:
         resumen['hashes']['cantidad'] += 1
     
+content = ''
 
 with f as csv_file:
     count = 0
     for row in csv_file:
         row = row.strip()
-        if row != '':
-            analize(row)
-            count += 1
-        if count == 150:
-            break
-    print(count)
-
+        content += row + '\n'
+    analize()
+        
 print(output)
 
 with open('output.json', 'w', encoding='utf-8') as out:

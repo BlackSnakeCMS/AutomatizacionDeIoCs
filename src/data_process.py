@@ -1,5 +1,6 @@
 import requests
 import socket
+from urllib.parse import urlparse
 from models import DataModel
 
 class DataProcess:
@@ -11,16 +12,16 @@ class DataProcess:
         super().__init__()
     
     def analyzeip(self, ip:str):
-        url = self.base_url + ip.replace('[.]', '.')
+        url = self.base_url + ip
         res = requests.get(url, headers={'x-auth-token': self.api_token})
         payload = res.json()
         data = DataModel.fromDict(payload)
         return data
 
     def analyzeurl(self, url:str):
-        url = url.replace('[.]', '.')
+        domain = urlparse(url).netloc
         try:
-            ip = socket.gethostbyname(url)
+            ip = socket.gethostbyname(domain)
             return self.analyzeip(ip)
         except:
             print(url)
