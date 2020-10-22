@@ -10,7 +10,7 @@
         },
         "hashes": {
             "cantidad": 43,
-            "antivirus": 0
+            "no_antivirus": 3
         }
     },
     "detalle": {
@@ -1733,6 +1733,467 @@
                 "reputation": "Riesgo bajo"
             }
         ],
-        "hashes": []
+        "hashes": [
+            {
+                "hash": "3a97d9b6f17754dcd38ca7fc89caab04",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": true,
+                    "avg": false,
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "fb56ce4b853a94ae3f64367c02ec7e31",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": false,
+                    "ESET-NOD32": true,
+                    "F-Secure": false,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "3d16542d4ee5c8f77e6c0281d283c7bc",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "0022c1fe1d6b036de2a08d50ac5446a5",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "56f423c7a7fef041f3039319f2055509",
+                "type": "md5"
+            },
+            {
+                "hash": "22149a1ee21e6d60758fe58b34f04952",
+                "type": "md5"
+            },
+            {
+                "hash": "eb40189cde69d60ca6f9a3f0531dbc5e",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "0155738045b331f44d300f4a7d08cf21",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "0ad4892ead67e65ec3dd4c978fce7d92",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "0ad6da9e62a2c985156a9c53f8494171",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "747cc5ce7f2d062ebec6219384b57e8c",
+                "type": "md5"
+            },
+            {
+                "hash": "600b604784594e3339776c6563aa45a1",
+                "type": "md5"
+            },
+            {
+                "hash": "48377c1c4cfedebe35733e9c3675f9be",
+                "type": "md5"
+            },
+            {
+                "hash": "1046652e0aaa682f89068731fa5e8e50",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "10e0699f20e31e89c3becfd8bf24cb4c",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "0275585c3b871405dd299d458724db3d",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "20c9df1e5f426f9eb7461cd99d406904",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "ed3509b103dc485221c85d865fafafac",
+                "type": "md5"
+            },
+            {
+                "hash": "ef498ea09bf51b002fc7eb3dfd0d19d3",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "1713e551b8118e45d6ea3f05ec1be529",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "1a4635564172393ae9f43eab85652ba5",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": false
+                }
+            },
+            {
+                "hash": "7bc8a2ef08f51cf6eeb777b261da3367",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "02fc4e3a7998e0213fa5e768239bd0b0",
+                "type": "md5"
+            },
+            {
+                "hash": "8ba4df29b0593be172ff5678d8a05bb3",
+                "type": "md5"
+            },
+            {
+                "hash": "f01026e1107b722435126c53b2af47a9",
+                "type": "md5"
+            },
+            {
+                "hash": "1300432e537e7ba07840adecf38e543b",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "15a4eb525072642bb43f3c188a7c3504",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "16cda323189d8eba4248c0a2f5ad0d8f",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "1b9b9c8db7735f1793f981d0be556d88",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": true,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "09886f7c1725fe5b86b28dd79bc7a4d1",
+                "type": "md5"
+            },
+            {
+                "hash": "fb56ce4b853a94ae3f64367c02ec7e31",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": false,
+                    "ESET-NOD32": true,
+                    "F-Secure": false,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "fb56ce4b853a94ae3f64367c02ec7e31",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": false,
+                    "ESET-NOD32": true,
+                    "F-Secure": false,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "98992c12e58745854a885f9630124d3e",
+                "type": "md5"
+            },
+            {
+                "hash": "f34914dd1faabfc94a8695e7229d0192",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": false,
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "3d16542d4ee5c8f77e6c0281d283c7bc",
+                "type": "md5",
+                "detected": {
+                    "avast": true,
+                    "clamav": false,
+                    "avg": "unknown",
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "0022c1fe1d6b036de2a08d50ac5446a5",
+                "type": "md5",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "4e39bc95e35323ab586d740725a1c8cbcde01fe453f7c4cac7cced9a26e42cc9",
+                "type": "sha256",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": false,
+                    "Kaspersky": false
+                }
+            },
+            {
+                "hash": "20831e820af5f41353b5afab659f2ad42ec6df5d9692448872f3ed8bbb40ab92",
+                "type": "sha256",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": false,
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "225e9596de85ca7b1025d6e444f6a01aa6507feef213f4d2e20da9e7d5d8e430",
+                "type": "sha256",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            },
+            {
+                "hash": "5001793790939009355ba841610412e0f8d60ef5461f2ea272ccf4fd4c83b823",
+                "type": "sha256",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "392f32241cd3448c7a435935f2ff0d2cdc609dda81dd4946b1c977d25134e96e",
+                "type": "sha256",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": true,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "40c46bcab9acc0d6d235491c01a66d4c6f35d884c19c6f410901af6d1e33513b",
+                "type": "sha256",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": true,
+                    "avg": true,
+                    "McAfee": true,
+                    "ESET-NOD32": false,
+                    "F-Secure": true,
+                    "Kaspersky": true
+                }
+            },
+            {
+                "hash": "4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be",
+                "type": "sha256",
+                "detected": {
+                    "avast": "unknown",
+                    "clamav": false,
+                    "avg": false,
+                    "McAfee": "unknown",
+                    "ESET-NOD32": "unknown",
+                    "F-Secure": "unknown",
+                    "Kaspersky": "unknown"
+                }
+            }
+        ]
     }
 }
