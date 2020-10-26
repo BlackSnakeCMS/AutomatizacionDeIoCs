@@ -29,7 +29,6 @@ class DataProcess:
             ip = socket.gethostbyname(domain)
             return self.analyzeip(ip)
         except:
-            print(url)
             return None
 
     def analizehash(self, hash_value:str, hash_type:str):
@@ -43,7 +42,5 @@ class DataProcess:
         else:
             return 'invalid hash type'
         res = otx.get_indicator_details_by_section(indicator, hash_value, 'analysis')
-        a = DataHash.fromDict(res, hash_type)
-        if a == None:
-            print(hash_value)
-        return a
+        return DataHash.fromDict(res, hash_type)
+      

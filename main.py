@@ -3,41 +3,29 @@ import json
 import iocextract as ioc
 import sys, getopt
 
-ips = 0
-hashes = 0
-urls = 0
-content = ''
-
-process = DataProcess()
-
-output = {
-    "resumen":{
-        "urls": {
-            "cantidad": 0,
-            "buenas": 0,
+def analize(content):
+    output = {
+        "resumen":{
+            "urls": {
+                "cantidad": 0,
+                "buenas": 0,
+            },
+            "ips": {
+                "cantidad": 0,
+                "buenas": 0
+            },
+            "hashes": {
+                "cantidad": 0,
+                "no_antivirus": 0
+            }
         },
-        "ips": {
-            "cantidad": 0,
-            "buenas": 0
-        },
-        "hashes": {
-            "cantidad": 0,
-            "no_antivirus": 0
+        "detalle":{
+            "urls": [],
+            "ips": [],
+            "hashes": []
         }
-    },
-    "detalle":{
-        "urls": [],
-        "ips": [],
-        "hashes": []
     }
-}
-
-def analize():
-    global ips
-    global hashes
-    global urls
-    global output
-    global content
+    process = DataProcess()
     resumen = output['resumen']
     ips = ioc.extract_ips(content, refang=True)
     urls = ioc.extract_urls(content, refang=True)
@@ -100,18 +88,21 @@ def analize():
             output['detalle']['hashes'].append(
                 {'hash': sha256, 'type': 'sha256'}
             )
+    return output
 
 
 def main(argv):
-    global content
+    content = ""
+    output = {}
     inputfile = 'data.csv'
     outputfile = 'output.json'
     try:
-        opts, args = getopt.getopt(argv, 'hi:o', ['ifile=', 'ofile='])
+        opts, args = getopt.getopt(argv, 'hi:o:', ['ifile=', 'ofile='])
     except getopt.GetoptError:
         print('main.py -i <inputfile> -o <outputfile>')
         sys.exit(2)
     for opt, arg in opts:
+        print(arg)
         if opt == '-h':
             print('usage: main.py -i <inputfile> -o <outputfile>')
             sys.exit()
@@ -119,6 +110,7 @@ def main(argv):
             inputfile = arg
         elif opt in ("-o", "--ofile"):
             outputfile = arg
+            
 
     f = open(inputfile, 'r', encoding='utf-8')
     print("Comenzando analisis...")
@@ -127,7 +119,7 @@ def main(argv):
         for row in csv_file:
             row = row.strip()
             content += row + '\n'
-        analize()
+        #analize(content)
     print("Fin del análisis")
 
     with open(outputfile, 'w', encoding='utf-8') as out:
