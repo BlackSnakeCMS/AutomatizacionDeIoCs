@@ -119,7 +119,7 @@ def main(argv):
         for row in csv_file:
             row = row.strip()
             content += row + '\n'
-        #analize(content)
+        output = analize(content)
     print("Fin del análisis")
 
     with open(outputfile, 'w', encoding='utf-8') as out:
